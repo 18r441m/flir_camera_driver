@@ -25,13 +25,13 @@ from launch_ros.substitutions import FindPackageShare
 
 example_parameters = {
     'blackfly_s': {
+        'pixel_format': 'BGR8',
         'debug': False,
         'compute_brightness': False,
         'adjust_timestamp': True,
         'dump_node_map': False,
         # set parameters defined in blackfly_s.yaml
         'gain_auto': 'Continuous',
-        'pixel_format': 'BGR8',
         'exposure_auto': 'Continuous',
         # to use a user set, do this:
         'user_set_selector': 'UserSet0',
@@ -48,7 +48,7 @@ example_parameters = {
         # 'binning_y': 1,
         # 'connect_while_subscribed': True,
         'frame_rate_auto': 'Off',
-        'frame_rate': 30.0,
+        'frame_rate': 20.0,
         'frame_rate_enable': True,
         'buffer_queue_size': 10,
         'trigger_mode': 'Off',
