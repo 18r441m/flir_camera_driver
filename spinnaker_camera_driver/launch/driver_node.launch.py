@@ -31,7 +31,7 @@ example_parameters = {
         'dump_node_map': False,
         # set parameters defined in blackfly_s.yaml
         'gain_auto': 'Continuous',
-        # 'pixel_format': 'BayerRG8',
+        'pixel_format': 'BGR8',
         'exposure_auto': 'Continuous',
         # to use a user set, do this:
         'user_set_selector': 'UserSet0',
@@ -48,7 +48,7 @@ example_parameters = {
         # 'binning_y': 1,
         # 'connect_while_subscribed': True,
         'frame_rate_auto': 'Off',
-        'frame_rate': 40.0,
+        'frame_rate': 30.0,
         'frame_rate_enable': True,
         'buffer_queue_size': 10,
         'trigger_mode': 'Off',
@@ -61,6 +61,7 @@ example_parameters = {
         'chunk_enable_gain': True,
         'chunk_selector_timestamp': 'Timestamp',
         'chunk_enable_timestamp': True,
+        'adc_bit_depth': "Bit12",
     },
     'blackfly': {
         'debug': False,

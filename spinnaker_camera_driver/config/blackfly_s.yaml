@@ -46,6 +46,10 @@ parameters:
   - name: offset_y
     type: int
     node: ImageFormatControl/OffsetY
+  - name: adc_bit_depth
+    type: enum
+    # valid values are "Bit8", "Bit10", "Bit12"
+    node: ImageFormatControl/AdcBitDepth
 
   #
   # -------- analog control
